@@ -1,6 +1,6 @@
 # ConsoleBug Website
 
-![License](https://img.shields.io/github/license/consolebug/consolebug.github.io)
+[![License](https://img.shields.io/github/license/consolebug/consolebug.github.io)](LICENSE)
 ![Stars](https://img.shields.io/github/stars/consolebug/consolebug.github.io)
 ![Forks](https://img.shields.io/github/forks/consolebug/consolebug.github.io)
 ![Issues](https://img.shields.io/github/issues/consolebug/consolebug.github.io)
