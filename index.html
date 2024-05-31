@@ -8,314 +8,11 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
       <script src="https://kit.fontawesome.com/9d250f4a05.js" crossorigin="anonymous"></script>
       <link rel="icon" href="images/GK_mKXuaIAAVMFM.jpeg" type="image/png">
-      <style>
-        * {cursor: url('images/downloads.ico'), auto; }
-         #video {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         z-index: -10;
-         }
-         footer {
-         position: fixed;
-         bottom: 10px;
-         width: 100%;
-         text-align: center;
-         line-height: 17px;
-         font-weight: 150;
-         font-size: 9px;
-         }
-         @import url("https://fonts.googleapis.com/css?family=Poppins");
-         @import url("https://fonts.googleapis.com/css2?family=IBM%20Plex%20Mono:wght@400;700&amp;display=swap");
-         * {
-         margin: 0;
-         padding: 0;
-         -webkit-user-select: none;
-         -khtml-user-select: none;
-         -moz-user-select: none;
-         -o-user-select: none;
-         user-select: none;
-         }
-         html {
-         height: 100%;
-         }
-         body {
-         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-         color: #fff;
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         user-select: none;
-         }
-         .center {
-         margin: 0 auto;
-         text-align: center;
-         margin-top: 80px;
-         }
-         .bio-text {
-         font-size: 16px;
-         animation: up 2s;
-         font-weight: 500;
-         color: #f1f1f1bd;
-         margin-bottom: 15px;
-         }
-         .username {
-         animation: up 2s;
-         font-size: 24px;
-         margin-top: 15px;
-         margin-bottom: 15px;
-         font-weight: 700;
-         font-family: "Poppins", sans-serif;
-         color: #ffffff;
-         font-weight: bold;
-         text-shadow: 0px 0px 2px #fabeff, 0px 0px 3px #0400ff, 0px 0px 7px #fabeff, 0px 0px 5px #0400ff, 0px 0px 8px #fabeff, 0px 0px 8px #0400ff;
-         }
-         .social-icons {
-         font-size: 28px;
-         transition: 0.2s ease-in-out;
-         padding: 0 2px;
-         color: #e4e9ff;
-         }
-         .social-icons:hover {
-         transform: scale(1.4);
-         }
-         .pfp-image {
-         animation: down 2s;
-         border-radius: 100%;
-         object-fit: cover;
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
-         width: 150px;
-         max-width: 150px;
-         height: 150px;
-         }
-         .container {
-         width: 600px;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         z-index: 1;
-         }
-         .blur {
-         background: rgba(35, 37, 36, 0.1);
-         backdrop-filter: blur(8px);
-         -webkit-backdrop-filter: blur(8px);
-         -moz-backdrop-filter: blur(8px);
-         -ms-backdrop-filter: blur(8px);
-         border: 2px solid rgba(0, 0, 0, 0.2);
-         margin: auto;
-         padding: 10px 0;
-         border-radius: 10px;
-         -webkit-animation: fadein 4s;
-         -moz-animation: fadein 2s;
-         -ms-animation: fadein 2s;
-         -o-animation: fadein 2s;
-         animation: fadein 2s;
-         -webkit-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.75);
-         -moz-box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.75);
-         box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.75);
-         }
-         @keyframes fadein {
-         from {
-         opacity: 0;
-         }
-         to {
-         opacity: 1;
-         }
-         }
-         .center,
-         .container,
-         .pfp-image,
-         .username,
-         .socials {
-         animation: fadein 2s;
-         }
-         #enterButton {
-         width: 100%;
-         height: 100%;
-         font-family: "IBM Plex Mono";
-         }
-         @keyframes fade-in {
-         from {
-         opacity: 0;
-         }
-         to {
-         opacity: 1;
-         }
-         }
-         body {
-         background-color: black;
-         color: white;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         height: 100vh;
-         margin: 0;
-         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-         }
-         button {
-         background-color: transparent;
-         border: none;
-         color: white;
-         font-size: 24px;
-         cursor: pointer;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         text-decoration: none;
-         font-family: "Poppins", sans-serif;
-         }
-         button:hover {
-         text-decoration: none;
-         }
-         .hidden {
-         display: none;
-         }
-         .visible {
-         display: block;
-         }
-         #progressContainer {
-         width: 100%;
-         max-width: 400px;
-         height: 8px;
-         background-color: #555;
-         border-radius: 10px;
-         margin: 0 auto;
-         overflow: hidden;
-         margin-top: 15px;
-         }
-         #progressBar {
-         width: 0;
-         height: 100%;
-         background-color: #ffffff;
-         border-radius: 10px;
-         }
-         #links {
-         right: 5px;
-         width: 100px;
-         float: left;
-         margin-top: -4px;
-         }
-         #groups {
-         float: right;
-         margin-top: 5px;
-         }
-         #dropDownContent div a {
-         opacity: 0;
-         transition: 1s;
-         line-height: 18px;
-         }
-         #dropDownContent div span {
-         margin-left: 10px;
-         margin-right: 10px;
-         }
-         #groups a, #groups span {
-         float: right;
-         }
-         .hitCount {
-         position: fixed;
-         bottom: 5px;
-         right: 5px;
-         transition: 3s;
-         color: var(--color);
-         font-size: 24px;
-         opacity: 0;
-         bottom: -3px;
-         }
-         a.hitCounter.badge-done0 {
-         display: none!important;
-         }
-         #background-video {
-         width: 100vw;
-         height: 100vh;
-         object-fit: cover;
-         position: fixed;
-         left: 0;
-         right: 0;
-         top: 0;
-         bottom: 0;
-         z-index: -1;
-         }
-         .hover-text{
-         position:relative;
-         display:inline-block;
-         font-family: "IBM Plex Mono";
-         cursor: pointer;
-         }
-         .hover-text::after{
-         content:attr(data-hover-text);
-         position:absolute;
-         top:-30px;
-         left:50%;
-         transform:translateX(-50%);
-         background-color:rgba(0,0,0,.8);
-         color:#fff;
-         padding:5px;
-         border-radius:5px;
-         font-size:14px;
-         opacity:0;
-         transition:opacity .3s ease-in-out;
-         font-family: "IBM Plex Mono";
-         cursor: pointer;
-         }
-         .hover-text.active::after,.hover-text:hover::after{
-         opacity:1;
-         cursor: pointer;
-         }
-         .discord-widget {
-         animation: up 2s;
-         padding: 5px 5px;
-         width: 65%;
-         text-align: center;
-         border-radius: 8px;
-         -webkit-box-shadow: 0 0 17px 1px rgba(0, 0, 0, .57);
-         -moz-box-shadow: 0 0 17px 1px rgba(0, 0, 0, .57);
-         box-shadow: 0 0 17px 1px rgba(0, 0, 0, .57);
-         cursor: pointer;
-         color: #a7a7a7;
-         transition: transform .25s ease, color .25s ease, background-color .25s ease, border-color .25s ease;
-         margin-bottom: 19px;
-         font-weight: 400;
-         font-family: poppins
-         }
-         .discord-widget:hover {
-         -webkit-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
-         -moz-box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
-         box-shadow: 0 0 20px 1px rgb(47 47 47/90%);
-         transform: scale(.95)
-         }
-         .tooltip {
-         position: relative;
-         display: inline-block
-         }
-         .tooltip .tooltiptext {
-         visibility: hidden;
-         width: 120px;
-         background-color: #000;
-         color: #fff;
-         text-align: center;
-         border-radius: 6px;
-         padding: 8px 0;
-         position: absolute;
-         z-index: 1;
-         bottom: 150%;
-         left: 50%;
-         margin-left: -63px;
-         transform: scale(0);
-         transition: ease-in-out 150ms
-         }
-         .tooltip:hover .tooltiptext {
-         visibility: visible;
-         transform: scale(1)
-         }
-      </style>
+      <meta property="og:title" content="@zyph - (ू˃̣̣̣̣̣̣︿˂̣̣̣̣̣̣ ू)">
+      <meta property="og:description" content="💸">
+      <meta property="og:image" content="image/gl67imr9l4.gif">
+      <meta property="og:url" content="https://consolebug.github.io">
+      <script>var s="!!!!!!=tuzmf?!!!!!!!!+!|dvstps;!vsm)(jnbhft0epxompbet/jdp(*-!bvup<!~!!!!!!!!!$wjefp!|!!!!!!!!!qptjujpo;!gjyfe<!!!!!!!!!upq;!1<!!!!!!!!!mfgu;!1<!!!!!!!!!xjeui;!211&<!!!!!!!!!ifjhiu;!211&<!!!!!!!!!pckfdu.gju;!dpwfs<!!!!!!!!!{.joefy;!.21<!!!!!!!!!~!!!!!!!!!gppufs!|!!!!!!!!!qptjujpo;!gjyfe<!!!!!!!!!cpuupn;!21qy<!!!!!!!!!xjeui;!211&<!!!!!!!!!ufyu.bmjho;!dfoufs<!!!!!!!!!mjof.ifjhiu;!28qy<!!!!!!!!!gpou.xfjhiu;!261<!!!!!!!!!gpou.tj{f;!:qy<!!!!!!!!!~!!!!!!!!!Ajnqpsu!vsm)#iuuqt;00gpout/hpphmfbqjt/dpn0dtt@gbnjmz>Qpqqjot#*<!!!!!!!!!Ajnqpsu!vsm)#iuuqt;00gpout/hpphmfbqjt/dpn0dtt3@gbnjmz>JCN&31Qmfy&31Npop;xhiuA511<811\'bnq<ejtqmbz>txbq#*<!!!!!!!!!+!|!!!!!!!!!nbshjo;!1<!!!!!!!!!qbeejoh;!1<!!!!!!!!!.xfclju.vtfs.tfmfdu;!opof<!!!!!!!!!.liunm.vtfs.tfmfdu;!opof<!!!!!!!!!.np{.vtfs.tfmfdu;!opof<!!!!!!!!!.p.vtfs.tfmfdu;!opof<!!!!!!!!!vtfs.tfmfdu;!opof<!!!!!!!!!~!!!!!!!!!iunm!|!!!!!!!!!ifjhiu;!211&<!!!!!!!!!~!!!!!!!!!cpez!|!!!!!!!!!gpou.gbnjmz;!tztufn.vj-!.bqqmf.tztufn-!CmjolNbdTztufnGpou-!#Tfhpf!VJ#-!Spcpup-!!!!!!!!!Pyzhfo-!Vcvouv-!Dboubsfmm-!#Pqfo!Tbot#-!#Ifmwfujdb!Ofvf#-!tbot.tfsjg<!!!!!!!!!dpmps;!$ggg<!!!!!!!!!cbdlhspvoe.tj{f;!dpwfs<!!!!!!!!!cbdlhspvoe.sfqfbu;!op.sfqfbu<!!!!!!!!!cbdlhspvoe.buubdinfou;!gjyfe<!!!!!!!!!vtfs.tfmfdu;!opof<!!!!!!!!!~!!!!!!!!!/dfoufs!|!!!!!!!!!nbshjo;!1!bvup<!!!!!!!!!ufyu.bmjho;!dfoufs<!!!!!!!!!nbshjo.upq;!91qy<!!!!!!!!!~!!!!!!!!!/cjp.ufyu!|!!!!!!!!!gpou.tj{f;!27qy<!!!!!!!!!bojnbujpo;!vq!3t<!!!!!!!!!gpou.xfjhiu;!611<!!!!!!!!!dpmps;!$g2g2g2ce<!!!!!!!!!nbshjo.cpuupn;!26qy<!!!!!!!!!~!!!!!!!!!/vtfsobnf!|!!!!!!!!!bojnbujpo;!vq!3t<!!!!!!!!!gpou.tj{f;!35qy<!!!!!!!!!nbshjo.upq;!26qy<!!!!!!!!!nbshjo.cpuupn;!26qy<!!!!!!!!!gpou.xfjhiu;!811<!!!!!!!!!gpou.gbnjmz;!#Qpqqjot#-!tbot.tfsjg<!!!!!!!!!dpmps;!$gggggg<!!!!!!!!!gpou.xfjhiu;!cpme<!!!!!!!!!ufyu.tibepx;!1qy!1qy!3qy!$gbcfgg-!1qy!1qy!4qy!$1511gg-!1qy!1qy!8qy!$gbcfgg-!1qy!1qy!6qy!$1511gg-!1qy!1qy!9qy!$gbcfgg-!1qy!1qy!9qy!$1511gg<!!!!!!!!!~!!!!!!!!!/tpdjbm.jdpot!|!!!!!!!!!gpou.tj{f;!39qy<!!!!!!!!!usbotjujpo;!1/3t!fbtf.jo.pvu<!!!!!!!!!qbeejoh;!1!3qy<!!!!!!!!!dpmps;!$f5f:gg<!!!!!!!!!~!!!!!!!!!/tpdjbm.jdpot;ipwfs!|!!!!!!!!!usbotgpsn;!tdbmf)2/5*<!!!!!!!!!~!!!!!!!!!/qgq.jnbhf!|!!!!!!!!!bojnbujpo;!epxo!3t<!!!!!!!!!cpsefs.sbejvt;!211&<!!!!!!!!!pckfdu.gju;!dpwfs<!!!!!!!!!ejtqmbz;!cmpdl<!!!!!!!!!nbshjo.mfgu;!bvup<!!!!!!!!!nbshjo.sjhiu;!bvup<!!!!!!!!!xjeui;!261qy<!!!!!!!!!nby.xjeui;!261qy<!!!!!!!!!ifjhiu;!261qy<!!!!!!!!!~!!!!!!!!!/dpoubjofs!|!!!!!!!!!xjeui;!711qy<!!!!!!!!!qptjujpo;!bctpmvuf<!!!!!!!!!upq;!61&<!!!!!!!!!mfgu;!61&<!!!!!!!!!usbotgpsn;!usbotmbuf).61&-!.61&*<!!!!!!!!!{.joefy;!2<!!!!!!!!!~!!!!!!!!!/cmvs!|!!!!!!!!!cbdlhspvoe;!shcb)46-!48-!47-!1/2*<!!!!!!!!!cbdlespq.gjmufs;!cmvs)9qy*<!!!!!!!!!.xfclju.cbdlespq.gjmufs;!cmvs)9qy*<!!!!!!!!!.np{.cbdlespq.gjmufs;!cmvs)9qy*<!!!!!!!!!.nt.cbdlespq.gjmufs;!cmvs)9qy*<!!!!!!!!!cpsefs;!3qy!tpmje!shcb)1-!1-!1-!1/3*<!!!!!!!!!nbshjo;!bvup<!!!!!!!!!qbeejoh;!21qy!1<!!!!!!!!!cpsefs.sbejvt;!21qy<!!!!!!!!!.xfclju.bojnbujpo;!gbefjo!5t<!!!!!!!!!.np{.bojnbujpo;!gbefjo!3t<!!!!!!!!!.nt.bojnbujpo;!gbefjo!3t<!!!!!!!!!.p.bojnbujpo;!gbefjo!3t<!!!!!!!!!bojnbujpo;!gbefjo!3t<!!!!!!!!!.xfclju.cpy.tibepx;!1!1!61qy!.6qy!shcb)1-!1-!1-!1/86*<!!!!!!!!!.np{.cpy.tibepx;!1!1!61qy!.6qy!shcb)1-!1-!1-!1/86*<!!!!!!!!!cpy.tibepx;!1!1!61qy!.6qy!shcb)1-!1-!1-!1/86*<!!!!!!!!!~!!!!!!!!!Alfzgsbnft!gbefjo!|!!!!!!!!!gspn!|!!!!!!!!!pqbdjuz;!1<!!!!!!!!!~!!!!!!!!!up!|!!!!!!!!!pqbdjuz;!2<!!!!!!!!!~!!!!!!!!!~!!!!!!!!!/dfoufs-!!!!!!!!!/dpoubjofs-!!!!!!!!!/qgq.jnbhf-!!!!!!!!!/vtfsobnf-!!!!!!!!!/tpdjbmt!|!!!!!!!!!bojnbujpo;!gbefjo!3t<!!!!!!!!!~!!!!!!!!!$foufsCvuupo!|!!!!!!!!!xjeui;!211&<!!!!!!!!!ifjhiu;!211&<!!!!!!!!!gpou.gbnjmz;!#JCN!Qmfy!Npop#<!!!!!!!!!~!!!!!!!!!Alfzgsbnft!gbef.jo!|!!!!!!!!!gspn!|!!!!!!!!!pqbdjuz;!1<!!!!!!!!!~!!!!!!!!!up!|!!!!!!!!!pqbdjuz;!2<!!!!!!!!!~!!!!!!!!!~!!!!!!!!!cpez!|!!!!!!!!!cbdlhspvoe.dpmps;!cmbdl<!!!!!!!!!dpmps;!xijuf<!!!!!!!!!ejtqmbz;!gmfy<!!!!!!!!!bmjho.jufnt;!dfoufs<!!!!!!!!!kvtujgz.dpoufou;!dfoufs<!!!!!!!!!ifjhiu;!211wi<!!!!!!!!!nbshjo;!1<!!!!!!!!!gpou.gbnjmz;!tztufn.vj-!.bqqmf.tztufn-!CmjolNbdTztufnGpou-!#Tfhpf!VJ#-!Spcpup-!Pyzhfo-!Vcvouv-!Dboubsfmm-!#Pqfo!Tbot#-!#Ifmwfujdb!Ofvf#-!tbot.tfsjg<!!!!!!!!!~!!!!!!!!!cvuupo!|!!!!!!!!!cbdlhspvoe.dpmps;!usbotqbsfou<!!!!!!!!!cpsefs;!opof<!!!!!!!!!dpmps;!xijuf<!!!!!!!!!gpou.tj{f;!35qy<!!!!!!!!!dvstps;!qpjoufs<!!!!!!!!!qptjujpo;!bctpmvuf<!!!!!!!!!upq;!61&<!!!!!!!!!mfgu;!61&<!!!!!!!!!usbotgpsn;!usbotmbuf).61&-!.61&*<!!!!!!!!!ufyu.efdpsbujpo;!opof<!!!!!!!!!gpou.gbnjmz;!#Qpqqjot#-!tbot.tfsjg<!!!!!!!!!~!!!!!!!!!cvuupo;ipwfs!|!!!!!!!!!ufyu.efdpsbujpo;!opof<!!!!!!!!!~!!!!!!!!!/ijeefo!|!!!!!!!!!ejtqmbz;!opof<!!!!!!!!!~!!!!!!!!!/wjtjcmf!|!!!!!!!!!ejtqmbz;!cmpdl<!!!!!!!!!~!!!!!!!!!$qsphsfttDpoubjofs!|!!!!!!!!!xjeui;!211&<!!!!!!!!!nby.xjeui;!511qy<!!!!!!!!!ifjhiu;!9qy<!!!!!!!!!cbdlhspvoe.dpmps;!$666<!!!!!!!!!cpsefs.sbejvt;!21qy<!!!!!!!!!nbshjo;!1!bvup<!!!!!!!!!pwfsgmpx;!ijeefo<!!!!!!!!!nbshjo.upq;!26qy<!!!!!!!!!~!!!!!!!!!$qsphsfttCbs!|!!!!!!!!!xjeui;!1<!!!!!!!!!ifjhiu;!211&<!!!!!!!!!cbdlhspvoe.dpmps;!$gggggg<!!!!!!!!!cpsefs.sbejvt;!21qy<!!!!!!!!!~!!!!!!!!!$mjolt!|!!!!!!!!!sjhiu;!6qy<!!!!!!!!!xjeui;!211qy<!!!!!!!!!gmpbu;!mfgu<!!!!!!!!!nbshjo.upq;!.5qy<!!!!!!!!!~!!!!!!!!!$hspvqt!|!!!!!!!!!gmpbu;!sjhiu<!!!!!!!!!nbshjo.upq;!6qy<!!!!!!!!!~!!!!!!!!!$espqEpxoDpoufou!ejw!b!|!!!!!!!!!pqbdjuz;!1<!!!!!!!!!usbotjujpo;!2t<!!!!!!!!!mjof.ifjhiu;!29qy<!!!!!!!!!~!!!!!!!!!$espqEpxoDpoufou!ejw!tqbo!|!!!!!!!!!nbshjo.mfgu;!21qy<!!!!!!!!!nbshjo.sjhiu;!21qy<!!!!!!!!!~!!!!!!!!!$hspvqt!b-!$hspvqt!tqbo!|!!!!!!!!!gmpbu;!sjhiu<!!!!!!!!!~!!!!!!!!!/ijuDpvou!|!!!!!!!!!qptjujpo;!gjyfe<!!!!!!!!!cpuupn;!6qy<!!!!!!!!!sjhiu;!6qy<!!!!!!!!!usbotjujpo;!4t<!!!!!!!!!dpmps;!wbs)..dpmps*<!!!!!!!!!gpou.tj{f;!35qy<!!!!!!!!!pqbdjuz;!1<!!!!!!!!!cpuupn;!.4qy<!!!!!!!!!~!!!!!!!!!b/ijuDpvoufs/cbehf.epof1!|!!!!!!!!!ejtqmbz;!opof\"jnqpsubou<!!!!!!!!!~!!!!!!!!!$cbdlhspvoe.wjefp!|!!!!!!!!!xjeui;!211wx<!!!!!!!!!ifjhiu;!211wi<!!!!!!!!!pckfdu.gju;!dpwfs<!!!!!!!!!qptjujpo;!gjyfe<!!!!!!!!!mfgu;!1<!!!!!!!!!sjhiu;!1<!!!!!!!!!upq;!1<!!!!!!!!!cpuupn;!1<!!!!!!!!!{.joefy;!.2<!!!!!!!!!~!!!!!!!!!/ipwfs.ufyu|!!!!!!!!!qptjujpo;sfmbujwf<!!!!!!!!!ejtqmbz;jomjof.cmpdl<!!!!!!!!!gpou.gbnjmz;!#JCN!Qmfy!Npop#<!!!!!!!!!dvstps;!qpjoufs<!!!!!!!!!~!!!!!!!!!/ipwfs.ufyu;;bgufs|!!!!!!!!!dpoufou;buus)ebub.ipwfs.ufyu*<!!!!!!!!!qptjujpo;bctpmvuf<!!!!!!!!!upq;.41qy<!!!!!!!!!mfgu;61&<!!!!!!!!!usbotgpsn;usbotmbufY).61&*<!!!!!!!!!cbdlhspvoe.dpmps;shcb)1-1-1-/9*<!!!!!!!!!dpmps;$ggg<!!!!!!!!!qbeejoh;6qy<!!!!!!!!!cpsefs.sbejvt;6qy<!!!!!!!!!gpou.tj{f;25qy<!!!!!!!!!pqbdjuz;1<!!!!!!!!!usbotjujpo;pqbdjuz!/4t!fbtf.jo.pvu<!!!!!!!!!gpou.gbnjmz;!#JCN!Qmfy!Npop#<!!!!!!!!!dvstps;!qpjoufs<!!!!!!!!!~!!!!!!!!!/ipwfs.ufyu/bdujwf;;bgufs-/ipwfs.ufyu;ipwfs;;bgufs|!!!!!!!!!pqbdjuz;2<!!!!!!!!!dvstps;!qpjoufs<!!!!!!!!!~!!!!!!!!!/ejtdpse.xjehfu!|!!!!!!!!!bojnbujpo;!vq!3t<!!!!!!!!!qbeejoh;!6qy!6qy<!!!!!!!!!xjeui;!76&<!!!!!!!!!ufyu.bmjho;!dfoufs<!!!!!!!!!cpsefs.sbejvt;!9qy<!!!!!!!!!.xfclju.cpy.tibepx;!1!1!28qy!2qy!shcb)1-!1-!1-!/68*<!!!!!!!!!.np{.cpy.tibepx;!1!1!28qy!2qy!shcb)1-!1-!1-!/68*<!!!!!!!!!cpy.tibepx;!1!1!28qy!2qy!shcb)1-!1-!1-!/68*<!!!!!!!!!dvstps;!qpjoufs<!!!!!!!!!dpmps;!$b8b8b8<!!!!!!!!!usbotjujpo;!usbotgpsn!/36t!fbtf-!dpmps!/36t!fbtf-!cbdlhspvoe.dpmps!/36t!fbtf-!cpsefs.dpmps!/36t!fbtf<!!!!!!!!!nbshjo.cpuupn;!2:qy<!!!!!!!!!gpou.xfjhiu;!511<!!!!!!!!!gpou.gbnjmz;!qpqqjot!!!!!!!!!~!!!!!!!!!/ejtdpse.xjehfu;ipwfs!|!!!!!!!!!.xfclju.cpy.tibepx;!1!1!31qy!2qy!shc)58!58!580:1&*<!!!!!!!!!.np{.cpy.tibepx;!1!1!31qy!2qy!shc)58!58!580:1&*<!!!!!!!!!cpy.tibepx;!1!1!31qy!2qy!shc)58!58!580:1&*<!!!!!!!!!usbotgpsn;!tdbmf)/:6*!!!!!!!!!~!!!!!!!!!/uppmujq!|!!!!!!!!!qptjujpo;!sfmbujwf<!!!!!!!!!ejtqmbz;!jomjof.cmpdl!!!!!!!!!~!!!!!!!!!/uppmujq!/uppmujqufyu!|!!!!!!!!!wjtjcjmjuz;!ijeefo<!!!!!!!!!xjeui;!231qy<!!!!!!!!!cbdlhspvoe.dpmps;!$111<!!!!!!!!!dpmps;!$ggg<!!!!!!!!!ufyu.bmjho;!dfoufs<!!!!!!!!!cpsefs.sbejvt;!7qy<!!!!!!!!!qbeejoh;!9qy!1<!!!!!!!!!qptjujpo;!bctpmvuf<!!!!!!!!!{.joefy;!2<!!!!!!!!!cpuupn;!261&<!!!!!!!!!mfgu;!61&<!!!!!!!!!nbshjo.mfgu;!.74qy<!!!!!!!!!usbotgpsn;!tdbmf)1*<!!!!!!!!!usbotjujpo;!fbtf.jo.pvu!261nt!!!!!!!!!~!!!!!!!!!/uppmujq;ipwfs!/uppmujqufyu!|!!!!!!!!!wjtjcjmjuz;!wjtjcmf<!!!!!!!!!usbotgpsn;!tdbmf)2*!!!!!!!!!~!!!!!!=0tuzmf?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
    </head>
    <body>
       <button id="enterButton" class="hidden">[zyph]</button>
