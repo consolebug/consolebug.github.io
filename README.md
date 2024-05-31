@@ -6,8 +6,6 @@
 ![Issues](https://img.shields.io/github/issues/consolebug/consolebug.github.io)
 ![Contributors](https://img.shields.io/github/contributors/consolebug/consolebug.github.io)
 
-![Website Preview](https://consolebug.github.io)
-
 ## 🚀 Introduction
 
 Welcome to **ConsoleBug Website**! This website is designed to show off some of the new and upcomming trends. It provides a way for you to see what will be trending in my eyes. remember this is just my opinion.
