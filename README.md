@@ -13,20 +13,12 @@ Welcome to **ConsoleBug Website**! This website is designed to show off some of 
 ## 📂 Table of Contents
 
 - [Introduction](#-introduction)
-- [Features](#-features)
 - [Demo](#-demo)
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Contact](#-contact)
-
-## ✨ Features
-
-- **Responsive Design**: Optimized for all devices
-- **Feature 1**: Description of feature 1
-- **Feature 2**: Description of feature 2
-- **Feature 3**: Description of feature 3
 
 ## 🌐 Demo
 
