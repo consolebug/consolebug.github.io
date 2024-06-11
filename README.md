@@ -14,7 +14,6 @@ Welcome to **ConsoleBug Website**! This website is designed to show off some of 
 
 - [Introduction](#-introduction)
 - [Demo](#-demo)
-- [Installation](#-installation)
 - [Usage](#-usage)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -24,38 +23,11 @@ Welcome to **ConsoleBug Website**! This website is designed to show off some of 
 
 Check out the live demo: [ConsoleBug Website](https://consolebug.github.io)
 
-## 🛠️ Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/consolebug/consolebug.github.io.git
-    cd consolebug.github.io
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Set up environment variables (if applicable):
-    ```bash
-    cp .env.example .env
-    ```
-4. Start the development server:
-    ```bash
-    npm run dev
-    ```
-
 ## 🚀 Usage
 
-To start the application in production mode, run:
+To start the application in production mode:
 ```bash
-npm start
-```
-Build for Production
-To create a production build, use:
-```bash
-npm run build
+go to the website
 ```
 ## 🤝 Contributing
 
